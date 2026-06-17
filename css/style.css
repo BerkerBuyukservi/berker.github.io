@@ -33,6 +33,14 @@ video {
   letter-spacing: 0;
 }
 
+.navbar .container {
+  gap: 1rem;
+}
+
+.navbar-nav {
+  flex-wrap: wrap;
+}
+
 .nav-link {
   color: var(--ink-2);
   font-weight: 600;
@@ -400,6 +408,19 @@ video {
 }
 
 @media (max-width: 767.98px) {
+  .navbar .container {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .navbar-nav {
+    width: 100%;
+  }
+
+  .navbar .btn {
+    margin-top: 0.25rem;
+  }
+
   .hero {
     min-height: 68vh;
   }
