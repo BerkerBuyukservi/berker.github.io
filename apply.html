@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Apply | Newport Apply</title>
+    <meta name="description" content="Static application interface for Newport Apply.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Newport Apply</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Open menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="positions.html">Positions</a></li>
+            <li class="nav-item"><a class="nav-link" href="media.html">Media</a></li>
+            <li class="nav-item"><a class="btn btn-brand ms-lg-3 active" aria-current="page" href="apply.html">Apply Now</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="page-hero page-hero-apply">
+        <div class="container">
+          <span class="eyebrow">Application UI</span>
+          <h1>Preview your Newport Apply application</h1>
+          <p>This static screen shows how a candidate application page can look without sending any data.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-lg-5">
+              <div class="apply-summary">
+                <img src="assets/img/onboarding.png" alt="Onboarding process after an application preview" class="img-fluid rounded-3 mb-4">
+                <h2>Application details</h2>
+                <p>This page is a static interface preview for a candidate application screen.</p>
+                <ul class="check-list">
+                  <li>The fields represent a realistic job application screen.</li>
+                  <li>The button is visual only and does not send data.</li>
+                  <li>No backend or external form service is used on GitHub Pages.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="application-form" aria-label="Application interface">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="fullName" class="form-label">Full Name</label>
+                    <input id="fullName" type="text" class="form-control">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input id="email" type="email" class="form-control">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="phone" class="form-label">Phone</label>
+                    <input id="phone" type="tel" class="form-control">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="position" class="form-label">Position</label>
+                    <select id="position" class="form-select">
+                      <option value="">Choose</option>
+                      <option>Frontend Developer</option>
+                      <option>Digital Marketing Specialist</option>
+                      <option>Operations Coordinator</option>
+                      <option>People Operations Assistant</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="education" class="form-label">Education Level</label>
+                    <select id="education" class="form-select">
+                      <option value="">Choose</option>
+                      <option>High school</option>
+                      <option>Associate degree</option>
+                      <option>Bachelor's degree</option>
+                      <option>Master's degree</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="experience" class="form-label">Experience</label>
+                    <select id="experience" class="form-select">
+                      <option value="">Choose</option>
+                      <option>Entry level</option>
+                      <option>0-2 years</option>
+                      <option>2-5 years</option>
+                      <option>5+ years</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <label for="cvLink" class="form-label">Resume Link</label>
+                    <input id="cvLink" type="url" class="form-control" placeholder="https://">
+                  </div>
+                  <div class="col-12">
+                    <label for="message" class="form-label">Short Message</label>
+                    <textarea id="message" class="form-control" rows="5"></textarea>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input id="consent" class="form-check-input" type="checkbox">
+                      <label class="form-check-label" for="consent">
+                        I agree that my application details may be reviewed for the hiring process.
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12 d-flex flex-wrap align-items-center gap-3">
+                    <button class="btn btn-brand btn-lg" type="button" style="min-width: 180px;">Apply Now</button>
+                    <span class="form-hint">This button is only for the static interface preview.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+        <span>Newport Apply Career Platform</span>
+        <span>Application page</span>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
